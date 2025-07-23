@@ -1,33 +1,26 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { GraduationCap, Calendar } from 'lucide-react';
-
 const About = () => {
-  const education = [
-    {
-      degree: "B.Tech in CSE with specialization in Data Science",
-      institution: "SRGI, Jhansi",
-      period: "2022 – 2026",
-      grade: "CGPA: 7.5",
-      current: true
-    },
-    {
-      degree: "12th Grade - CBSE",
-      institution: "Gwalior",
-      period: "2022",
-      grade: "74%",
-      current: false
-    },
-    {
-      degree: "10th Grade - CBSE", 
-      institution: "Gwalior",
-      period: "2020",
-      grade: "78%",
-      current: false
-    }
-  ];
-
-  return (
-    <section id="about" className="py-20 bg-muted/30">
+  const education = [{
+    degree: "B.Tech in CSE with specialization in Data Science",
+    institution: "SRGI, Jhansi",
+    period: "2022 – 2026",
+    grade: "CGPA: 7.5",
+    current: true
+  }, {
+    degree: "12th Grade - CBSE",
+    institution: "Gwalior",
+    period: "2022",
+    grade: "74%",
+    current: false
+  }, {
+    degree: "10th Grade - CBSE",
+    institution: "Gwalior",
+    period: "2020",
+    grade: "78%",
+    current: false
+  }];
+  return <section id="about" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -42,10 +35,7 @@ const About = () => {
             {/* Bio Section */}
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold text-foreground mb-4">My Journey</h3>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Hi! I'm Khushi, a passionate web developer with a strong foundation in front-end development. 
-                I recently completed a comprehensive web development course, where I honed my skills in HTML, CSS and UI/UX.
-              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">Hi! I'm Khushi, a passionate Frontend web developer with a strong foundation in front-end development. I recently completed a comprehensive web development course, where I honed my skills in HTML, CSS and UI/UX.</p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I thrive on building responsive, user-friendly websites and applications that solve real-world problems 
                 and deliver great user experiences. My passion lies in creating intuitive interfaces that bridge the gap 
@@ -62,8 +52,7 @@ const About = () => {
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold text-foreground mb-6">Education</h3>
               <div className="space-y-4">
-                {education.map((item, index) => (
-                  <Card key={index} className={`skill-card ${item.current ? 'border-primary/50 bg-primary/5' : ''}`}>
+                {education.map((item, index) => <Card key={index} className={`skill-card ${item.current ? 'border-primary/50 bg-primary/5' : ''}`}>
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
                         <div className={`p-3 rounded-lg ${item.current ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground'}`}>
@@ -84,15 +73,12 @@ const About = () => {
                         </div>
                       </div>
                     </CardContent>
-                  </Card>
-                ))}
+                  </Card>)}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

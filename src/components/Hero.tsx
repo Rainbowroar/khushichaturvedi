@@ -1,21 +1,28 @@
 import { Button } from '@/components/ui/button';
 import { Download, Linkedin, Github, ChevronDown } from 'lucide-react';
 import profileImage from '@/assets/khushi-profile-new.jpg';
-
 const Hero = () => {
   const scrollToNext = () => {
     const aboutSection = document.querySelector('#about');
-    aboutSection?.scrollIntoView({ behavior: 'smooth' });
+    aboutSection?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center hero-gradient relative overflow-hidden">
+  return <section id="home" className="min-h-screen flex items-center justify-center hero-gradient relative overflow-hidden">
       {/* Floating background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full float-animation" style={{ animationDelay: '0s' }} />
-        <div className="absolute top-40 right-20 w-16 h-16 bg-coral/10 rounded-full float-animation" style={{ animationDelay: '2s' }} />
-        <div className="absolute bottom-40 left-20 w-12 h-12 bg-secondary/10 rounded-full float-animation" style={{ animationDelay: '4s' }} />
-        <div className="absolute bottom-60 right-10 w-24 h-24 bg-ocean/10 rounded-full float-animation" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full float-animation" style={{
+        animationDelay: '0s'
+      }} />
+        <div className="absolute top-40 right-20 w-16 h-16 bg-coral/10 rounded-full float-animation" style={{
+        animationDelay: '2s'
+      }} />
+        <div className="absolute bottom-40 left-20 w-12 h-12 bg-secondary/10 rounded-full float-animation" style={{
+        animationDelay: '4s'
+      }} />
+        <div className="absolute bottom-60 right-10 w-24 h-24 bg-ocean/10 rounded-full float-animation" style={{
+        animationDelay: '1s'
+      }} />
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
@@ -23,11 +30,7 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="relative mb-8 mt-16 inline-block">
             <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
-              <img 
-                src={profileImage} 
-                alt="Khushi Chaturvedi" 
-                className="w-full h-full object-cover"
-              />
+              <img src={profileImage} alt="Khushi Chaturvedi" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -top-2 -right-2 w-12 h-12 bg-coral rounded-full flex items-center justify-center">
               <span className="text-coral-foreground text-sm font-bold">👋</span>
@@ -44,9 +47,7 @@ const Hero = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-medium">
-            Hi! I'm Khushi, a passionate web developer
-          </p>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-medium">Hi! I'm Khushi, a passionate UI designer</p>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
             with a strong foundation in front-end development and UI/UX design. 
             I thrive on building responsive, user-friendly applications that deliver great experiences.
@@ -69,17 +70,11 @@ const Hero = () => {
           </div>
 
           {/* Scroll Indicator */}
-          <button 
-            onClick={scrollToNext}
-            className="animate-bounce text-primary hover:text-coral transition-colors duration-300"
-            aria-label="Scroll to about section"
-          >
+          <button onClick={scrollToNext} className="animate-bounce text-primary hover:text-coral transition-colors duration-300" aria-label="Scroll to about section">
             <ChevronDown className="h-8 w-8" />
           </button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
