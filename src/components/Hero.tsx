@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Download, Linkedin, Github, ChevronDown } from 'lucide-react';
-import profileImage from '@/assets/khushi-profile.jpg';
+import profileImage from '@/assets/khushi-profile-new.jpg';
 
 const Hero = () => {
   const scrollToNext = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
-          <div className="relative mb-8 inline-block">
+          <div className="relative mb-8 mt-8 inline-block">
             <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
               <img 
                 src={profileImage} 
