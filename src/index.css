@@ -9,15 +9,15 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Ocean-inspired background gradients */
-    --background: 200 20% 98%;
-    --foreground: 210 25% 8%;
+    --background: 200 25% 92%;
+    --foreground: 210 30% 12%;
 
     /* Card styling with ocean depth */
-    --card: 200 30% 96%;
-    --card-foreground: 210 25% 8%;
+    --card: 200 35% 88%;
+    --card-foreground: 210 30% 12%;
 
-    --popover: 200 30% 96%;
-    --popover-foreground: 210 25% 8%;
+    --popover: 200 35% 88%;
+    --popover-foreground: 210 30% 12%;
 
     /* Apricot Aquas Color Palette */
     --primary: 188 100% 41%; /* #00BDD0 - aqua */
