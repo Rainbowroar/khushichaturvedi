@@ -58,7 +58,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-              onClick={() => window.open('/khushi-resume.pdf', '_blank')}
+              onClick={() => window.open('/lovable-uploads/0c75a324-4fd4-4db2-9b49-ca49c4a131c4.png', '_blank')}
             >
               <Download className="mr-2 h-5 w-5" />
               Download Resume
