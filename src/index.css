@@ -8,46 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Dark theme - Ocean-inspired background gradients */
-    --background: 222 47% 7%; /* Very dark blue-black */
-    --foreground: 210 40% 98%; /* Light text */
+    /* Ocean-inspired background gradients */
+    --background: 200 20% 98%;
+    --foreground: 210 25% 8%;
 
-    /* Card styling with dark ocean depth */
-    --card: 222 47% 9%; /* Slightly lighter than background */
-    --card-foreground: 210 40% 98%;
+    /* Card styling with ocean depth */
+    --card: 200 30% 96%;
+    --card-foreground: 210 25% 8%;
 
-    --popover: 222 47% 9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 200 30% 96%;
+    --popover-foreground: 210 25% 8%;
 
-    /* Apricot Aquas Color Palette - Dark adapted */
-    --primary: 188 100% 50%; /* Brighter aqua for dark background */
-    --primary-foreground: 222 47% 7%;
+    /* Apricot Aquas Color Palette */
+    --primary: 188 100% 41%; /* #00BDD0 - aqua */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 34 89% 65%; /* Slightly muted peach for dark theme */
-    --secondary-foreground: 222 47% 7%;
+    --secondary: 34 89% 80%; /* #FECDA1 - peach */
+    --secondary-foreground: 210 25% 8%;
 
-    --tertiary: 73 24% 55%; /* Muted soft green */
-    --tertiary-foreground: 210 40% 98%;
+    --tertiary: 73 24% 68%; /* #D0DAAE - soft green */
+    --tertiary-foreground: 210 25% 8%;
 
-    --accent: 22 96% 70%; /* Slightly muted apricot */
-    --accent-foreground: 222 47% 7%;
+    --accent: 22 96% 85%; /* #FDCDA - apricot */
+    --accent-foreground: 210 25% 8%;
 
-    --ocean: 199 31% 60%; /* Muted blue for dark theme */
-    --ocean-foreground: 210 40% 98%;
+    --ocean: 199 31% 70%; /* #A2C9D3 - muted blue */
+    --ocean-foreground: 0 0% 100%;
 
-    --coral: 13 95% 65%; /* Slightly muted coral */
-    --coral-foreground: 210 40% 98%;
+    --coral: 13 95% 71%; /* #FC9773 - sunset coral */
+    --coral-foreground: 0 0% 100%;
 
-    /* Dark neutral tones */
-    --muted: 222 32% 15%; /* Dark muted background */
-    --muted-foreground: 215 20% 65%; /* Light muted text */
+    /* Neutral tones */
+    --muted: 200 15% 94%;
+    --muted-foreground: 210 15% 45%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 222 32% 20%; /* Dark borders */
-    --input: 222 32% 20%; /* Dark inputs */
-    --ring: 188 100% 50%; /* Bright ring for focus */
+    --border: 200 20% 88%;
+    --input: 200 20% 88%;
+    --ring: 188 100% 41%;
 
     /* Design system gradients */
     --gradient-ocean: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--ocean)));
