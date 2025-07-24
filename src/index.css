@@ -8,46 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Fresh Aqua Paradise Theme */
-    --background: 190 20% 96%;
-    --foreground: 200 30% 8%;
+    /* Ocean-inspired background gradients */
+    --background: 200 25% 92%;
+    --foreground: 210 30% 12%;
 
-    /* Card styling with aqua freshness */
-    --card: 190 25% 92%;
-    --card-foreground: 200 30% 8%;
+    /* Card styling with ocean depth */
+    --card: 200 35% 88%;
+    --card-foreground: 210 30% 12%;
 
-    --popover: 190 25% 92%;
-    --popover-foreground: 200 30% 8%;
+    --popover: 200 35% 88%;
+    --popover-foreground: 210 30% 12%;
 
-    /* Vibrant Aqua Palette */
-    --primary: 185 100% 50%; /* Pure bright aqua */
+    /* Apricot Aquas Color Palette */
+    --primary: 188 100% 41%; /* #00BDD0 - aqua */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 175 80% 70%; /* Turquoise */
-    --secondary-foreground: 200 30% 8%;
+    --secondary: 34 89% 80%; /* #FECDA1 - peach */
+    --secondary-foreground: 210 25% 8%;
 
-    --tertiary: 195 60% 75%; /* Light sky blue */
-    --tertiary-foreground: 200 30% 8%;
+    --tertiary: 73 24% 68%; /* #D0DAAE - soft green */
+    --tertiary-foreground: 210 25% 8%;
 
-    --accent: 170 100% 60%; /* Cyan mint */
-    --accent-foreground: 0 0% 100%;
+    --accent: 22 96% 85%; /* #FDCDA - apricot */
+    --accent-foreground: 210 25% 8%;
 
-    --ocean: 200 50% 65%; /* Deep aqua blue */
+    --ocean: 199 31% 70%; /* #A2C9D3 - muted blue */
     --ocean-foreground: 0 0% 100%;
 
-    --coral: 180 90% 55%; /* Aqua green */
+    --coral: 13 95% 71%; /* #FC9773 - sunset coral */
     --coral-foreground: 0 0% 100%;
 
     /* Neutral tones */
-    --muted: 190 15% 94%;
-    --muted-foreground: 200 20% 45%;
+    --muted: 200 15% 94%;
+    --muted-foreground: 210 15% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 190 20% 88%;
-    --input: 190 20% 88%;
-    --ring: 185 100% 50%;
+    --border: 200 20% 88%;
+    --input: 200 20% 88%;
+    --ring: 188 100% 41%;
 
     /* Design system gradients */
     --gradient-ocean: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--ocean)));
@@ -55,21 +55,28 @@ All colors MUST be HSL.
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.1), hsl(var(--secondary) / 0.1));
     --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--muted)));
 
-    /* Shadows with aqua glow */
-    --shadow-soft: 0 4px 20px hsl(var(--primary) / 0.15);
-    --shadow-medium: 0 8px 30px hsl(var(--primary) / 0.2);
-    --shadow-glow: 0 0 40px hsl(var(--accent) / 0.4);
+    /* Shadows with ocean theme */
+    --shadow-soft: 0 4px 20px hsl(var(--primary) / 0.1);
+    --shadow-medium: 0 8px 30px hsl(var(--primary) / 0.15);
+    --shadow-glow: 0 0 40px hsl(var(--coral) / 0.3);
 
     --radius: 0.5rem;
 
-    --sidebar-background: 190 20% 98%;
-    --sidebar-foreground: 200 30% 26%;
-    --sidebar-primary: 185 100% 50%;
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 190 15% 95%;
-    --sidebar-accent-foreground: 200 30% 10%;
-    --sidebar-border: 190 20% 88%;
-    --sidebar-ring: 185 100% 50%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
